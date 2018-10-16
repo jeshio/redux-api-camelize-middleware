@@ -1,0 +1,24 @@
+{
+  "name": "redux-api-camelize-middleware",
+  "version": "1.0.0",
+  "description": "Convert properties of responses to camelCase.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "axios",
+    "redux",
+    "api",
+    "camelize",
+    "camel-case",
+    "react",
+    "middleware"
+  ],
+  "author": "jeshio",
+  "repository": "https://github.com/jeshio/redux-api-camelize-middleware",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
