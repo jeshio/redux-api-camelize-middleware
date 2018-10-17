@@ -1,4 +1,4 @@
-import camelCase from 'lodash/camelCase';
+import camelCase from 'camelcase';
 
 /**
  * Recursive camelize keys of object
@@ -7,7 +7,7 @@ const camelizeProps = obj => {
   if (Array.isArray(obj)) {
     return obj.map(v => camelizeProps(v));
   }
-  if (obj !== null && obj.constructor === Object) {
+  if (obj !== null && obj !== undefined && obj.constructor === Object) {
     return Object.keys(obj).reduce(
       (result, key) => ({
         ...result,

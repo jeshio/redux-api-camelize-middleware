@@ -1,8 +1,8 @@
-# Redux-api-camelize-middleware
+# redux-api-camelize-middleware
 
 This middleware needs for camelize property names of responses such is:
 
-GET request to https://pokeapi.co/api/v2/type/3/ will result:
+GET request to (https://pokeapi.co/api/v2/type/3/)[example API] will result:
 
 ```json
 {
@@ -11,8 +11,10 @@ GET request to https://pokeapi.co/api/v2/type/3/ will result:
       {
         "name": "rock",
         "url": "https://pokeapi.co/api/v2/type/6/"
-      },
-      ...
+      }
+    ]
+  }
+}
 ```
 
 After middleware handling:
@@ -24,8 +26,10 @@ After middleware handling:
       {
         "name": "rock",
         "url": "https://pokeapi.co/api/v2/type/6/"
-      },
-      ...
+      }
+    ]
+  }
+}
 ```
 
 ## Install
