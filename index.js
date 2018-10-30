@@ -7,7 +7,7 @@ export default () => next => action => {
   const newAction = { ...action };
   if (newAction.type) {
     if (newAction.type.endsWith('_SUCCESS')) {
-      newAction.payload.data = camelizeProps(newAction.payload.data);
+      newAction.payload = camelizeProps(newAction.payload.data);
     }
     if (newAction.type.endsWith('_FAIL')) {
       newAction.error = camelizeProps(newAction.error);
@@ -15,3 +15,5 @@ export default () => next => action => {
   }
   return next(newAction);
 };
+
+export { camelizeProps };
